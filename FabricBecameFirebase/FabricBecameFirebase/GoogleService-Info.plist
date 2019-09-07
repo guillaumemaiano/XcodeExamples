@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>855227968716-627ptlsqb67sc68urtac9tg4m2o1mnn6.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.855227968716-627ptlsqb67sc68urtac9tg4m2o1mnn6</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD0iuamBKzEnY5GH8pJFl1S5YLovJt9R_8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>855227968716</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>fr.maiano.FabricBecameFirebase</string>
+	<key>PROJECT_ID</key>
+	<string>fabricbecamefirebase</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fabricbecamefirebase.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:855227968716:ios:7932164025e33400c62669</string>
+	<key>DATABASE_URL</key>
+	<string>https://fabricbecamefirebase.firebaseio.com</string>
+</dict>
+</plist>

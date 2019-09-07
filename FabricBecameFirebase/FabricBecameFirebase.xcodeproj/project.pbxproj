@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B63A84082323EEAE009D8C4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63A84072323EEAE009D8C4B /* AppDelegate.swift */; };
+		B63A840A2323EEAE009D8C4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63A84092323EEAE009D8C4B /* ViewController.swift */; };
+		B63A840D2323EEAE009D8C4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A840B2323EEAE009D8C4B /* Main.storyboard */; };
+		B63A840F2323EEB1009D8C4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63A840E2323EEB1009D8C4B /* Assets.xcassets */; };
+		B63A84122323EEB1009D8C4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63A84102323EEB1009D8C4B /* LaunchScreen.storyboard */; };
+		B63A841A2323F922009D8C4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B63A84192323F922009D8C4B /* GoogleService-Info.plist */; };
+		D9E196948F2595F8FD156426 /* Pods_FabricBecameFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B63BA05920339E16C5BBE32 /* Pods_FabricBecameFirebase.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1B63BA05920339E16C5BBE32 /* Pods_FabricBecameFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FabricBecameFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A709FDF2CE7751E2CB3AA7 /* Pods-FabricBecameFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricBecameFirebase.debug.xcconfig"; path = "Target Support Files/Pods-FabricBecameFirebase/Pods-FabricBecameFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+		6C7AB5127EE38245AF5EDE78 /* Pods-FabricBecameFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricBecameFirebase.release.xcconfig"; path = "Target Support Files/Pods-FabricBecameFirebase/Pods-FabricBecameFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		B63A84042323EEAE009D8C4B /* FabricBecameFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FabricBecameFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63A84072323EEAE009D8C4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B63A84092323EEAE009D8C4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B63A840C2323EEAE009D8C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B63A840E2323EEB1009D8C4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B63A84112323EEB1009D8C4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B63A84132323EEB1009D8C4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63A84192323F922009D8C4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B63A84012323EEAE009D8C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E196948F2595F8FD156426 /* Pods_FabricBecameFirebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		126B9BD5610F9DA5371E1736 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69A709FDF2CE7751E2CB3AA7 /* Pods-FabricBecameFirebase.debug.xcconfig */,
+				6C7AB5127EE38245AF5EDE78 /* Pods-FabricBecameFirebase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3D9997DFF10884F0C80CCF6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B63BA05920339E16C5BBE32 /* Pods_FabricBecameFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B63A83FB2323EEAE009D8C4B = {
+			isa = PBXGroup;
+			children = (
+				B63A84062323EEAE009D8C4B /* FabricBecameFirebase */,
+				B63A84052323EEAE009D8C4B /* Products */,
+				126B9BD5610F9DA5371E1736 /* Pods */,
+				3D9997DFF10884F0C80CCF6D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B63A84052323EEAE009D8C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B63A84042323EEAE009D8C4B /* FabricBecameFirebase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B63A84062323EEAE009D8C4B /* FabricBecameFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				B63A84072323EEAE009D8C4B /* AppDelegate.swift */,
+				B63A84092323EEAE009D8C4B /* ViewController.swift */,
+				B63A840B2323EEAE009D8C4B /* Main.storyboard */,
+				B63A840E2323EEB1009D8C4B /* Assets.xcassets */,
+				B63A84102323EEB1009D8C4B /* LaunchScreen.storyboard */,
+				B63A84132323EEB1009D8C4B /* Info.plist */,
+				B63A84192323F922009D8C4B /* GoogleService-Info.plist */,
+			);
+			path = FabricBecameFirebase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B63A84032323EEAE009D8C4B /* FabricBecameFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B63A84162323EEB1009D8C4B /* Build configuration list for PBXNativeTarget "FabricBecameFirebase" */;
+			buildPhases = (
+				04E396EF1570420D5EFB5E0C /* [CP] Check Pods Manifest.lock */,
+				B63A84002323EEAE009D8C4B /* Sources */,
+				B63A84012323EEAE009D8C4B /* Frameworks */,
+				B63A84022323EEAE009D8C4B /* Resources */,
+				40FB4C525DB788956C59C155 /* [CP] Embed Pods Frameworks */,
+				B64634EA23241A85006487DA /* Crashlytics */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FabricBecameFirebase;
+			productName = FabricBecameFirebase;
+			productReference = B63A84042323EEAE009D8C4B /* FabricBecameFirebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B63A83FC2323EEAE009D8C4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "guillaume MAIANO";
+				TargetAttributes = {
+					B63A84032323EEAE009D8C4B = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = B63A83FF2323EEAE009D8C4B /* Build configuration list for PBXProject "FabricBecameFirebase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B63A83FB2323EEAE009D8C4B;
+			productRefGroup = B63A84052323EEAE009D8C4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B63A84032323EEAE009D8C4B /* FabricBecameFirebase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B63A84022323EEAE009D8C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63A84122323EEB1009D8C4B /* LaunchScreen.storyboard in Resources */,
+				B63A841A2323F922009D8C4B /* GoogleService-Info.plist in Resources */,
+				B63A840F2323EEB1009D8C4B /* Assets.xcassets in Resources */,
+				B63A840D2323EEAE009D8C4B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04E396EF1570420D5EFB5E0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FabricBecameFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40FB4C525DB788956C59C155 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FabricBecameFirebase/Pods-FabricBecameFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FabricBecameFirebase/Pods-FabricBecameFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FabricBecameFirebase/Pods-FabricBecameFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64634EA23241A85006487DA /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B63A84002323EEAE009D8C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B63A840A2323EEAE009D8C4B /* ViewController.swift in Sources */,
+				B63A84082323EEAE009D8C4B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B63A840B2323EEAE009D8C4B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63A840C2323EEAE009D8C4B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B63A84102323EEB1009D8C4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B63A84112323EEB1009D8C4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B63A84142323EEB1009D8C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B63A84152323EEB1009D8C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B63A84172323EEB1009D8C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69A709FDF2CE7751E2CB3AA7 /* Pods-FabricBecameFirebase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LV2X84473;
+				INFOPLIST_FILE = FabricBecameFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.maiano.FabricBecameFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B63A84182323EEB1009D8C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C7AB5127EE38245AF5EDE78 /* Pods-FabricBecameFirebase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LV2X84473;
+				INFOPLIST_FILE = FabricBecameFirebase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.maiano.FabricBecameFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B63A83FF2323EEAE009D8C4B /* Build configuration list for PBXProject "FabricBecameFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63A84142323EEB1009D8C4B /* Debug */,
+				B63A84152323EEB1009D8C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B63A84162323EEB1009D8C4B /* Build configuration list for PBXNativeTarget "FabricBecameFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B63A84172323EEB1009D8C4B /* Debug */,
+				B63A84182323EEB1009D8C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B63A83FC2323EEAE009D8C4B /* Project object */;
+}

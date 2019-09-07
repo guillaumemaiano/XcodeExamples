@@ -1,0 +1,8 @@
+
+## User settings
+xcuserdata/
+FabricBecameFirebase.xcodeproj/xcuserdata
+FabricBecameFirebase.xcworkspace/
+
+pods
+Podfile.lock
