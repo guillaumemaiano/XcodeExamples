@@ -19,17 +19,7 @@ struct ContentView: View {
         NavigationView {
         List(rooms) { room in
             // NavigationBar has changed to NavigationLink
-            NavigationLink(destination: Text(room.name)) {
-            
-            Image( room.thumbnailName)
-                .cornerRadius(6.0)
-            VStack(alignment: .leading) {
-                Text(room.name)
-                Text("\(room.capacity) people")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                }
-            }
+            RoomCellView(room: room)
         }
             // title gets set on content (NOT on NavigationView)
             .navigationBarTitle(Text("Rooms"))
@@ -40,5 +30,25 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(rooms: testData)
+    }
+}
+
+// Struct was auto-extracted via cmd-cick > extract subview
+// Room var was typed in, system doesn't yet detect vars to be created during extraction
+struct RoomCellView: View {
+    
+    let room: Room
+    var body: some View {
+        NavigationLink(destination: Text(room.name)) {
+            
+            Image( room.thumbnailName)
+                .cornerRadius(6.0)
+            VStack(alignment: .leading) {
+                Text(room.name)
+                Text("\(room.capacity) people")
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
+            }
+        }
     }
 }
