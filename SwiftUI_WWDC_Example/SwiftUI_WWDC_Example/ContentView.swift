@@ -39,7 +39,7 @@ struct RoomCellView: View {
     
     let room: Room
     var body: some View {
-        NavigationLink(destination: Text(room.name)) {
+        NavigationLink(destination: RoomDetail(room: room)) {
             
             Image( room.thumbnailName)
                 .cornerRadius(6.0)

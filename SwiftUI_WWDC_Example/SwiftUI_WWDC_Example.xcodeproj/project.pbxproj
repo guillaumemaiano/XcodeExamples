@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64DB5F72325B7A10028FAF2 /* RoomDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64DB5F62325B7A10028FAF2 /* RoomDetail.swift */; };
 		B658B002232524D200097D91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658B001232524D200097D91 /* AppDelegate.swift */; };
 		B658B004232524D200097D91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658B003232524D200097D91 /* SceneDelegate.swift */; };
 		B658B006232524D200097D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658B005232524D200097D91 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B64DB5F62325B7A10028FAF2 /* RoomDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetail.swift; sourceTree = "<group>"; };
 		B658AFFE232524D200097D91 /* SwiftUI_WWDC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_WWDC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658B001232524D200097D91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B658B003232524D200097D91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				B658B001232524D200097D91 /* AppDelegate.swift */,
 				B658B003232524D200097D91 /* SceneDelegate.swift */,
 				B658B005232524D200097D91 /* ContentView.swift */,
+				B64DB5F62325B7A10028FAF2 /* RoomDetail.swift */,
 				B6D6D3FB232584F1003D7950 /* Rooms.xcassets */,
 				B658B015232578C100097D91 /* Room.swift */,
 				B658B007232524D400097D91 /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B64DB5F72325B7A10028FAF2 /* RoomDetail.swift in Sources */,
 				B658B002232524D200097D91 /* AppDelegate.swift in Sources */,
 				B658B004232524D200097D91 /* SceneDelegate.swift in Sources */,
 				B658B016232578C100097D91 /* Room.swift in Sources */,
