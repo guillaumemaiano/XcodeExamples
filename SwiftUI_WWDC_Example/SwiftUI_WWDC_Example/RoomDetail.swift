@@ -10,13 +10,19 @@ import SwiftUI
 
 struct RoomDetail: View {
     let room: Room
-
+// @state (source of truth variable) is a mechanism managed by UISwift itself to redraw the body if needed
+// oh, I so hope I'll understand the idea again whenever I check this code out
+// Somewhere around 23:00 in WWDC 2019-204
+    @State private var zoomed = false
+    
     var body: some View {
         VStack {
-            // only the Observation Deck image is available as a asset
+            // only the Observation Deck image is available as an asset
             Image(room.imageName)
                 .resizable()
-                .aspectRatio(contentMode: .fit)
+                .aspectRatio(contentMode: zoomed ? .fill : .fit)
+                // was .tapAction in WWDC 2019-204
+                .onTapGesture { self.zoomed.toggle() }
                 Text("Capacity: \(room.capacity) people").italic()
                 // Amazingly, the navbar call works from anywhere within the view
                     .navigationBarTitle(Text(room.name), displayMode: .inline)
