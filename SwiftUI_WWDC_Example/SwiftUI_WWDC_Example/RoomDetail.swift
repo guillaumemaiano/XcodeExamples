@@ -22,7 +22,9 @@ struct RoomDetail: View {
                 .resizable()
                 .aspectRatio(contentMode: zoomed ? .fill : .fit)
                 // was .tapAction in WWDC 2019-204
-                .onTapGesture { self.zoomed.toggle() }
+                .onTapGesture { withAnimation {
+                    self.zoomed.toggle() }
+            }
                 Text("Capacity: \(room.capacity) people").italic()
                 // Amazingly, the navbar call works from anywhere within the view
                     .navigationBarTitle(Text(room.name), displayMode: .inline)
