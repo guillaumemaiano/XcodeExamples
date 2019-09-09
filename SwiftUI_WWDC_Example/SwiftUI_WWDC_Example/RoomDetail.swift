@@ -16,9 +16,10 @@
     @State private var zoomed = false
     
     var body: some View {
-       // VStack {
+       
             // WWDC video was topLeading, but I like it better topTrailing. Whatev'
             ZStack(alignment: .topTrailing) {
+                VStack {
                 // only the Observation Deck image is available as an asset
                 Image(room.imageName)
                     .resizable()
@@ -28,16 +29,16 @@
                         self.zoomed.toggle() }
                 }
                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                
-                Image(systemName: "video.fill")
-                    // SF images use the current font to size themselves, so adapt the font to change the image size!
-                    .font(.title)
-                    // Avoid the camera image being right close to the edge
-                    .padding(.all)
-//            }
-//            Text("Capacity: \(room.capacity) people").italic()
-//                // Amazingly, the navbar call works from anywhere within the view
-                .navigationBarTitle(Text(room.name), displayMode: .inline)
+                    
+                Text("Capacity: \(room.capacity) people").italic()
+                    // Amazingly, the navbar call works from anywhere within the view
+                    .navigationBarTitle(Text(room.name), displayMode: .inline)
+            }
+            Image(systemName: "video.fill")
+                // SF images use the current font to size themselves, so adapt the font to change the image size!
+                .font(.title)
+                // Avoid the camera image being right close to the edge
+                .padding(.all)
         }
     }
  }
