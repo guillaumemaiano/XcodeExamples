@@ -15,11 +15,11 @@ import SwiftUI
 // NOte:  Option-Cmd-P makes the preview window reload
 
 struct ContentView: View {
-    
-    var rooms: [Room] = []
+    // Note: was @ObjectBinding before Beta 5
+    @ObservedObject var store = RoomStore()
     var body: some View {
         NavigationView {
-        List(rooms) { room in
+            List(store.rooms) { room in
             // NavigationBar has changed to NavigationLink
             RoomCellView(room: room)
         }
@@ -31,7 +31,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(rooms: testData)
+        ContentView(store: RoomStore(rooms: testData))
     }
 }
 
