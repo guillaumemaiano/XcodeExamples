@@ -42,6 +42,7 @@ struct ContentView: View {
             }
                 // title gets set on content (NOT on NavigationView)
                 .navigationBarTitle(Text("Rooms"))
+                .navigationBarItems(trailing: EditButton())
                 // before Beta 5: .listStyle(.grouped)
                 .listStyle(GroupedListStyle())
         }
