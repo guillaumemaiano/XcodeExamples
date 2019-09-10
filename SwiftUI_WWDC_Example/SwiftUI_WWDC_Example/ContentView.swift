@@ -19,13 +19,25 @@ struct ContentView: View {
     @ObservedObject var store = RoomStore()
     var body: some View {
         NavigationView {
-            List(store.rooms) { room in
-            // NavigationBar has changed to NavigationLink
-            RoomCellView(room: room)
-        }
+            List {
+                Button(action: addRoom) {
+                    // all this text begs the question, how does localization work in SwiftUI?
+                    Text("Add room")
+                }
+                // Foreach creates view for each element, so I may mix static and dynamic content
+                ForEach(store.rooms) { room in
+                // NavigationBar has changed to NavigationLink
+                RoomCellView(room: room)
+                }
+            }
             // title gets set on content (NOT on NavigationView)
             .navigationBarTitle(Text("Rooms"))
+               // .listStyle(GroupedListStyle.)
         }
+    }
+    
+    func addRoom() {
+        store.rooms.append(Room(name: "Hall", capacity: 2000))
     }
 }
 

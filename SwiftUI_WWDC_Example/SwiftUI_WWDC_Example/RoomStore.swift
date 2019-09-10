@@ -26,5 +26,5 @@ class RoomStore: ObservableObject {
         self.rooms = rooms
     }
     
-    var didChange = PassthroughSubject<Void, Never>()
+    var objectWillChange = PassthroughSubject<Void, Never>()
 }
