@@ -38,6 +38,7 @@ struct ContentView: View {
                 // Option 2: filter
                 // Option 3: ???
                 .onDelete(perform: delete)
+                .onMove(perform: move)
                 }
             }
                 // title gets set on content (NOT on NavigationView)
@@ -54,6 +55,10 @@ struct ContentView: View {
     
     func delete(at offsets: IndexSet) {
         store.rooms.remove(atOffsets: offsets)
+    }
+    
+    func move(from source: IndexSet, to destination: Int) {
+        store.rooms.move(fromOffsets: source, toOffset: destination)
     }
 }
 
