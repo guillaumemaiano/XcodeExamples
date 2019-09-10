@@ -12,6 +12,8 @@ import SwiftUI
 // Note: SF Symbol is cool
 // -> Image(systemName: "photo")
 
+// NOte:  Option-Cmd-P makes the preview window reload
+
 struct ContentView: View {
     
     var rooms: [Room] = []

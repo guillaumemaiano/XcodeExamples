@@ -15,6 +15,7 @@
 		B658B00B232524D400097D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B658B00A232524D400097D91 /* Preview Assets.xcassets */; };
 		B658B00E232524D400097D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B658B00C232524D400097D91 /* LaunchScreen.storyboard */; };
 		B658B016232578C100097D91 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658B015232578C100097D91 /* Room.swift */; };
+		B65BFC192327C8DD00EE6DE8 /* RoomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BFC182327C8DD00EE6DE8 /* RoomStore.swift */; };
 		B6D6D3FC232584F1003D7950 /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D6D3FB232584F1003D7950 /* Rooms.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		B658B00D232524D400097D91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B658B00F232524D400097D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B658B015232578C100097D91 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		B65BFC182327C8DD00EE6DE8 /* RoomStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStore.swift; sourceTree = "<group>"; };
 		B6D6D3FB232584F1003D7950 /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +67,7 @@
 				B658B001232524D200097D91 /* AppDelegate.swift */,
 				B658B003232524D200097D91 /* SceneDelegate.swift */,
 				B658B005232524D200097D91 /* ContentView.swift */,
+				B65BFC182327C8DD00EE6DE8 /* RoomStore.swift */,
 				B64DB5F62325B7A10028FAF2 /* RoomDetail.swift */,
 				B6D6D3FB232584F1003D7950 /* Rooms.xcassets */,
 				B658B015232578C100097D91 /* Room.swift */,
@@ -160,6 +163,7 @@
 				B658B002232524D200097D91 /* AppDelegate.swift in Sources */,
 				B658B004232524D200097D91 /* SceneDelegate.swift in Sources */,
 				B658B016232578C100097D91 /* Room.swift in Sources */,
+				B65BFC192327C8DD00EE6DE8 /* RoomStore.swift in Sources */,
 				B658B006232524D200097D91 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
