@@ -20,24 +20,39 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                Button(action: addRoom) {
-                    // all this text begs the question, how does localization work in SwiftUI?
-                    Text("Add room")
+                Section {
+                    Button(action: addRoom) {
+                        // all this text begs the question, how does localization work in SwiftUI?
+                        Text("Add room")
+                    }
                 }
-                // Foreach creates view for each element, so I may mix static and dynamic content
-                ForEach(store.rooms) { room in
-                // NavigationBar has changed to NavigationLink
-                RoomCellView(room: room)
+                Section {
+                    // Foreach creates view for each element, so I may mix static and dynamic content
+                    ForEach(store.rooms) { room in
+                        // NavigationBar has changed to NavigationLink
+                        RoomCellView(room: room)
+                    }
+                // OK so how do I sort delete-rows from no-delete-rows?
+                // Y'know customer will want some rows that can be deleted and some, not
+                // Option 1: groups
+                // Option 2: filter
+                // Option 3: ???
+                .onDelete(perform: delete)
                 }
             }
-            // title gets set on content (NOT on NavigationView)
-            .navigationBarTitle(Text("Rooms"))
-               // .listStyle(GroupedListStyle.)
+                // title gets set on content (NOT on NavigationView)
+                .navigationBarTitle(Text("Rooms"))
+                // before Beta 5: .listStyle(.grouped)
+                .listStyle(GroupedListStyle())
         }
     }
     
     func addRoom() {
         store.rooms.append(Room(name: "Hall", capacity: 2000))
+    }
+    
+    func delete(at offsets: IndexSet) {
+        store.rooms.remove(atOffsets: offsets)
     }
 }
 
