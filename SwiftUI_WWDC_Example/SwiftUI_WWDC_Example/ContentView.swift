@@ -30,7 +30,7 @@ struct ContentView: View {
                 Section {
                     // Foreach creates view for each element, so I may mix static and dynamic content
                     ForEach(store.rooms) { room in
-                        // NavigationBar has changed to NavigationLink
+                        // NavigationButton has changed to NavigationLink
                         RoomCellView(room: room)
                     }
                 // OK so how do I sort delete-rows from no-delete-rows?
