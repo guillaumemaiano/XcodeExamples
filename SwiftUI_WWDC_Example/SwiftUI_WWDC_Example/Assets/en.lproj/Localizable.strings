@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  SwiftUI_WWDC_Example
+
+  Created by guillaume MAIANO on 11/09/2019.
+  Copyright © 2019 guillaume MAIANO. All rights reserved.
+*/
+"Rooms" = "Rooms";
+"Add room" = "Add Room";

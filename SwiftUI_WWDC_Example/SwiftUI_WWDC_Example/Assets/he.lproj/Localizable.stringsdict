@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%lld people</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@capacity_people@</string>
+		<key> capacity_people</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>u</string>
+			<key>zero</key>
+			<string>אף אחד</string>
+			<key>one</key>
+			<string>נפש אחד</string>
+			<key>other</key>
+			<string>איש %u   </string>
+		</dict>
+	</dict>
+</dict>
+</plist>

@@ -22,7 +22,8 @@ struct ContentView: View {
             List {
                 Section {
                     Button(action: addRoom) {
-                        // all this text begs the question, how does localization work in SwiftUI?
+                        // Localization is explained (quickly) around 48:30
+                        // Locale can be tested in the previews, super cool
                         Text("Add room")
                     }
                 }
@@ -37,6 +38,7 @@ struct ContentView: View {
                 // Option 1: groups
                 // Option 2: filter
                 // Option 3: ???
+                // corollary: how to prevent slide entirely to delete while leaving slide to show button
                 .onDelete(perform: delete)
                 .onMove(perform: move)
                 }
@@ -64,11 +66,22 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(store: RoomStore(rooms: testData))
+        Group {
+            ContentView(store: RoomStore(rooms: testData))
+            ContentView(store: RoomStore(rooms: testData))
+                .environment(\.sizeCategory, .extraExtraExtraLarge)
+            ContentView(store: RoomStore(rooms: testData))
+            .environment(\.colorScheme, .dark)
+            ContentView(store: RoomStore(rooms: testData))
+                .environment(\.layoutDirection, .rightToLeft)
+                // WWDC example is arabic, works fine with Hebrew
+            .environment(\.locale, Locale(identifier: "he"))
+        }
+        
     }
 }
 
-// Struct was auto-extracted via cmd-cick > extract subview
+// Struct was auto-extracted via cmd-click > extract subview
 // Room var was typed in, system doesn't yet detect vars to be created during extraction
 struct RoomCellView: View {
     
@@ -80,7 +93,7 @@ struct RoomCellView: View {
                 .cornerRadius(6.0)
             VStack(alignment: .leading) {
                 Text(room.name)
-                Text("\(room.capacity) people")
+                Text("\(room.capacity) people")//, comment: "Capacity")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }

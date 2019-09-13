@@ -16,6 +16,8 @@
 		B658B00E232524D400097D91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B658B00C232524D400097D91 /* LaunchScreen.storyboard */; };
 		B658B016232578C100097D91 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658B015232578C100097D91 /* Room.swift */; };
 		B65BFC192327C8DD00EE6DE8 /* RoomStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65BFC182327C8DD00EE6DE8 /* RoomStore.swift */; };
+		B6AF878C2329878600721DEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6AF878E2329878600721DEA /* Localizable.strings */; };
+		B6AF8797232A97D300721DEA /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = B6AF8799232A97D300721DEA /* Localizable.stringsdict */; };
 		B6D6D3FC232584F1003D7950 /* Rooms.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D6D3FB232584F1003D7950 /* Rooms.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,11 @@
 		B658B00F232524D400097D91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B658B015232578C100097D91 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
 		B65BFC182327C8DD00EE6DE8 /* RoomStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomStore.swift; sourceTree = "<group>"; };
+		B6AF878D2329878600721DEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6AF8792232A89C700721DEA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B6AF8793232A89C700721DEA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6AF8798232A97D300721DEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		B6AF879B232B136600721DEA /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = he; path = he.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		B6D6D3FB232584F1003D7950 /* Rooms.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Rooms.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,9 +76,8 @@
 				B658B005232524D200097D91 /* ContentView.swift */,
 				B65BFC182327C8DD00EE6DE8 /* RoomStore.swift */,
 				B64DB5F62325B7A10028FAF2 /* RoomDetail.swift */,
-				B6D6D3FB232584F1003D7950 /* Rooms.xcassets */,
 				B658B015232578C100097D91 /* Room.swift */,
-				B658B007232524D400097D91 /* Assets.xcassets */,
+				B6AF878B2329872900721DEA /* Assets */,
 				B658B00C232524D400097D91 /* LaunchScreen.storyboard */,
 				B658B00F232524D400097D91 /* Info.plist */,
 				B658B009232524D400097D91 /* Preview Content */,
@@ -85,6 +91,17 @@
 				B658B00A232524D400097D91 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B6AF878B2329872900721DEA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B658B007232524D400097D91 /* Assets.xcassets */,
+				B6D6D3FB232584F1003D7950 /* Rooms.xcassets */,
+				B6AF878E2329878600721DEA /* Localizable.strings */,
+				B6AF8799232A97D300721DEA /* Localizable.stringsdict */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +146,7 @@
 			knownRegions = (
 				en,
 				Base,
+				he,
 			);
 			mainGroup = B658AFF5232524D200097D91;
 			productRefGroup = B658AFFF232524D200097D91 /* Products */;
@@ -145,10 +163,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6AF878C2329878600721DEA /* Localizable.strings in Resources */,
 				B658B00E232524D400097D91 /* LaunchScreen.storyboard in Resources */,
 				B658B00B232524D400097D91 /* Preview Assets.xcassets in Resources */,
 				B6D6D3FC232584F1003D7950 /* Rooms.xcassets in Resources */,
 				B658B008232524D400097D91 /* Assets.xcassets in Resources */,
+				B6AF8797232A97D300721DEA /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,8 +195,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				B658B00D232524D400097D91 /* Base */,
+				B6AF8792232A89C700721DEA /* he */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B6AF878E2329878600721DEA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6AF878D2329878600721DEA /* en */,
+				B6AF8793232A89C700721DEA /* he */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		B6AF8799232A97D300721DEA /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6AF8798232A97D300721DEA /* en */,
+				B6AF879B232B136600721DEA /* he */,
+			);
+			name = Localizable.stringsdict;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -186,6 +225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -246,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -305,6 +346,7 @@
 				DEVELOPMENT_TEAM = 8LV2X84473;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_WWDC_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +367,7 @@
 				DEVELOPMENT_TEAM = 8LV2X84473;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUI_WWDC_Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
