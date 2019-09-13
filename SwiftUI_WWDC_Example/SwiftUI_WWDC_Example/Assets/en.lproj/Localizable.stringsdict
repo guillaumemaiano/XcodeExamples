@@ -5,19 +5,19 @@
 	<key>%lld people</key>
 	<dict>
 		<key>NSStringLocalizedFormatKey</key>
-		<string>%#@capacity_people@</string>
-		<key> capacity_people</key>
+		<string>%#@v1_capacity_people@</string>
+		<key>v1_capacity_people</key>
 		<dict>
 			<key>NSStringFormatSpecTypeKey</key>
 			<string>NSStringPluralRuleType</string>
 			<key>NSStringFormatValueTypeKey</key>
-			<string>u</string>
+			<string>lld</string>
 			<key>zero</key>
 			<string>Nobody fits</string>
 			<key>one</key>
 			<string>1 sentient</string>
 			<key>other</key>
-			<string>%u people</string>
+			<string>%lld people</string>
 		</dict>
 	</dict>
 </dict>

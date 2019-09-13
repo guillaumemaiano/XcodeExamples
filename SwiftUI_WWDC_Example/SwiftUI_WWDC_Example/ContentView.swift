@@ -100,3 +100,4 @@ struct RoomCellView: View {
         }
     }
 }
+// Note: Vivienne shows a tool called XclocReader. It's nowhere to be found though. Tease...
