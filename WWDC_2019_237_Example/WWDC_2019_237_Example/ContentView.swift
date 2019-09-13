@@ -22,7 +22,7 @@ struct ContentView: View {
                 Spacer()
                 AlienadoToast()
                 Spacer()
-                NavigationLink(destination: DemoView()) {
+                NavigationLink(destination: GraphicsView()) {
                     Text("Graphical Displays").foregroundColor(.white)
                     .padding() .background(Color(.systemBlue))
                 }

@@ -16,6 +16,7 @@
 		B6AF87C0232B1A2A00721DEA /* WWDC_2019_237_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF87BF232B1A2A00721DEA /* WWDC_2019_237_ExampleUITests.swift */; };
 		B6AF87CB232BDDEF00721DEA /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF87CA232BDDEF00721DEA /* DemoView.swift */; };
 		B6AF87CD232C06C000721DEA /* DemoView+VerticalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF87CC232C06C000721DEA /* DemoView+VerticalAlignment.swift */; };
+		B6B6391B232C3EBB00CB97AF /* GraphicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B6391A232C3EBB00CB97AF /* GraphicsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		B6AF87C1232B1A2A00721DEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6AF87CA232BDDEF00721DEA /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		B6AF87CC232C06C000721DEA /* DemoView+VerticalAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemoView+VerticalAlignment.swift"; sourceTree = "<group>"; };
+		B6B6391A232C3EBB00CB97AF /* GraphicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B6AF87A8232B1A2600721DEA /* AppDelegate.swift */,
 				B6AF87AA232B1A2600721DEA /* SceneDelegate.swift */,
 				B6AF87AC232B1A2600721DEA /* ContentView.swift */,
+				B6B6391A232C3EBB00CB97AF /* GraphicsView.swift */,
 				B6AF87CA232BDDEF00721DEA /* DemoView.swift */,
 				B6AF87CC232C06C000721DEA /* DemoView+VerticalAlignment.swift */,
 				B6AF87AE232B1A2900721DEA /* Assets.xcassets */,
@@ -219,6 +222,7 @@
 				B6AF87CD232C06C000721DEA /* DemoView+VerticalAlignment.swift in Sources */,
 				B6AF87AB232B1A2600721DEA /* SceneDelegate.swift in Sources */,
 				B6AF87AD232B1A2600721DEA /* ContentView.swift in Sources */,
+				B6B6391B232C3EBB00CB97AF /* GraphicsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
