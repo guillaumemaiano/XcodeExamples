@@ -10,7 +10,7 @@ import SwiftUI
 
 struct GraphicsView: View {
     var body: some View {
-            PlanetDataView()
+        PlanetDataView()
     }
 }
 
@@ -21,16 +21,80 @@ struct GraphicsView_Previews: PreviewProvider {
 }
 
 struct PlanetDataView: View {
+@State var planetData = true
     var body: some View {
         HStack {
+            if planetData {
             VStack(alignment: .leading) {
                 Text("Imperial System Ryza").font(.callout).layoutPriority(1).lineLimit(1)
                 Text("Type: ForgeWorld").font(.caption)
                 Text("Population: 53 Trillion").font(.caption)
                 Text("Food production: null").font(.caption)
-            }.foregroundColor(.red).padding().layoutPriority(1)
-            Circle().fill(LinearGradient(gradient: Gradient(colors: [.red, .orange, .yellow, .white]), startPoint: .leading, endPoint: .bottom)).aspectRatio(contentMode: .fit).padding(.trailing)
+                }.foregroundColor(.red).padding().layoutPriority(1).onTapGesture(perform: togglePlanetData)
+            } else {
+                VStack(alignment: .center) {
+                    Text("Planet data").font(.caption).foregroundColor(.red)
+// so ugly wow...
+//                    ZStack {
+//                        Ellipse().stroke(Color.red)
+                Text("📊🌐📋").foregroundColor(.red)
+//                    }
+                }.onTapGesture(perform: togglePlanetData)
+            }
+            PlanetDetailsInteractiveView(hideOutline: !planetData)
         }.padding()
             .background(Color.black)
+    }
+
+    func togglePlanetData() {
+        planetData.toggle()
+    }
+}
+
+struct PlanetDetailsInteractiveView: View {
+    @State private var dataDisplayed = false
+    var hideOutline: Bool
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Circle().fill(LinearGradient(gradient: Gradient(colors: [.red, .orange, .yellow, .white]), startPoint: .leading, endPoint: .bottom)).aspectRatio(contentMode: .fit).padding(.trailing)
+                    .onTapGesture { withAnimation(.easeOut(duration: 2.0)){
+                        self.displayData()
+                        }
+                }
+                if dataDisplayed {
+                    DefenseCollapsibleView(outline: hideOutline)
+                }
+            }
+            if dataDisplayed {
+                VStack(alignment: .trailing) {
+                    Text("Strategic Value").foregroundColor(.orange)
+                    Text("Ultimate").foregroundColor(.red)
+                }
+            }
+        }
+    }
+
+    func displayData() {
+           dataDisplayed.toggle()
+       }
+}
+
+struct DefenseCollapsibleView: View {
+    var outline: Bool
+    var body: some View {
+        ZStack {
+            if outline {
+            Capsule().strokeBorder(Color.red, style:
+                StrokeStyle(lineWidth: 5, lineCap: .square, lineJoin: .round, miterLimit: 0, dash: [5,3], dashPhase: 10))
+            }
+            VStack(alignment: .leading) {
+                Text("Main defense").bold().font(.footnote).foregroundColor(.orange)
+                Text("Ordo Mechanicum")
+                    .font(.footnote).foregroundColor(.red)
+                    .lineLimit(1)
+                    .layoutPriority(2)
+            }
+        }
     }
 }
