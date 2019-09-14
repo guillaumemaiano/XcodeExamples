@@ -106,3 +106,4 @@ struct DefenseCollapsibleView: View {
         }
     }
 }
+// Note: their cool example is available in the attached files, so I won't play along here, and just dl and compile it myself ^^
