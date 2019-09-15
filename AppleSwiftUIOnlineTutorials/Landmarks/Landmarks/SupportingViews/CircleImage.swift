@@ -3,7 +3,6 @@
 //  Landmarks
 //
 //  Created by guillaume MAIANO on 15/09/2019.
-//  Copyright © 2019 guillaume MAIANO. All rights reserved.
 //
 
 import SwiftUI
