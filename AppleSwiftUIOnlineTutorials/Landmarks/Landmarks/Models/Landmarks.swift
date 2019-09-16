@@ -33,6 +33,7 @@ struct Landmark: Hashable, Codable {
 }
 
 extension Landmark {
+    // kinda weird to have a UI element inside a model...
     var image: Image {
         // requires another custom Apple-provided file
         ImageStore.shared.image(name: imageName)
