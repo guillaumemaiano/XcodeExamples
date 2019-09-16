@@ -20,7 +20,7 @@ struct LandmarkList: View {
                 Toggle(isOn: $userData.restrictFavorites) {
                     Text("Favorites")
                 } 
-                ForEach(landmarkData) { landmark in
+                ForEach(userData.landmarks) { landmark in
                     if !self.userData.restrictFavorites || landmark.isFavorite {
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                             LandmarkRow(landmark: landmark)
