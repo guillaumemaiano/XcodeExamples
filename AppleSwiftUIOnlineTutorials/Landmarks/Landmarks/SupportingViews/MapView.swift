@@ -11,25 +11,27 @@ import MapKit
 
 struct MapView: View, UIViewRepresentable {
     
+    var coordinates: CLLocationCoordinate2D
+    
     func makeUIView(context: Context) -> MKMapView {
         return MKMapView(frame: .zero)
     }
     
     func updateUIView(_ view: MKMapView, context: Context) {
         
-        view.setRegion(makeTurtleRockRegion(), animated: true)
+        view.setRegion( landmarkRegion(), animated: true)
     }
-    private func makeTurtleRockRegion() -> MKCoordinateRegion {
-        let coordinate = CLLocationCoordinate2D(
-            latitude: 34.011286, longitude: -116.166868)
+
+    private func landmarkRegion() -> MKCoordinateRegion {
+        
         let span = MKCoordinateSpan(latitudeDelta: 2.0, longitudeDelta: 2.0)
-        let region = MKCoordinateRegion(center: coordinate, span: span)
+        let region = MKCoordinateRegion(center: coordinates, span: span)
         return region
     }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(coordinates: landmarkData[0].locationCoordinate)
     }
 }
