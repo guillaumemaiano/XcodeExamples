@@ -13,15 +13,23 @@ struct LandmarkList: View {
     
     var body: some View {
         NavigationView {
-            List(landmarkData) { landmark in
-                if !self.showFavoritesOnly || landmark.isFavorite {
-                NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
-                    LandmarkRow(landmark: landmark)
+            List {
+                // technique to pass dynamic/static in list, or combine groups of dynamic views
+                // Use  to access a binding to a state variable
+                Toggle(isOn: $showFavoritesOnly) {
+                    Text("Favorites")
+                }
+                ForEach(landmarkData) { landmark in
+                    if !self.showFavoritesOnly || landmark.isFavorite {
+                        NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
+                            LandmarkRow(landmark: landmark)
+                        }
                     }
                 }
             }
-                // how to selectively set the bartitle? 
-            .navigationBarTitle("Landmarks")
+                // how to selectively set the bartitle?
+                .navigationBarTitle("Landmarks")
+            
         }
     }
 }
@@ -30,7 +38,7 @@ struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) {
             deviceName in LandmarkList()
-            .previewDevice(PreviewDevice(rawValue: deviceName))
+                .previewDevice(PreviewDevice(rawValue: deviceName))
         }
     }
 }
