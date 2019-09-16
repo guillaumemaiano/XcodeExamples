@@ -9,18 +9,19 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    @State var showFavoritesOnly = false
+    //@State var showFavoritesOnly = false
+    @EnvironmentObject var userData: UserData
     
     var body: some View {
         NavigationView {
             List {
                 // technique to pass dynamic/static in list, or combine groups of dynamic views
                 // Use  to access a binding to a state variable
-                Toggle(isOn: $showFavoritesOnly) {
+                Toggle(isOn: $userData.restrictFavorites) {
                     Text("Favorites")
-                }
+                } 
                 ForEach(landmarkData) { landmark in
-                    if !self.showFavoritesOnly || landmark.isFavorite {
+                    if !self.userData.restrictFavorites || landmark.isFavorite {
                         NavigationLink(destination: LandmarkDetail(landmark: landmark)) {
                             LandmarkRow(landmark: landmark)
                         }
@@ -39,6 +40,7 @@ struct LandmarkList_Previews: PreviewProvider {
         ForEach(["iPhone SE", "iPhone XS Max"], id: \.self) {
             deviceName in LandmarkList()
                 .previewDevice(PreviewDevice(rawValue: deviceName))
+                .environmentObject(UserData())
         }
     }
 }

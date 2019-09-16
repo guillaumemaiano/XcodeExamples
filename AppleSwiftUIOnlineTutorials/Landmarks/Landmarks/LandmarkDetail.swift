@@ -9,8 +9,14 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var userData: UserData
     
     var landmark: Landmark
+    
+    var landmarkIndex: Int {
+        // force it
+        userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
 
     var body: some View {
         VStack {
