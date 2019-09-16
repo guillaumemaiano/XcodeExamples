@@ -77,6 +77,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B6433AA723301F1E00C1FE39 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				B6433AA5232FE52400C1FE39 /* charleyrivers.jpg */,
+				B6433A96232F120D00C1FE39 /* chilkoottrail.jpg */,
+				B6433A94232F120D00C1FE39 /* chincoteague.jpg */,
+				B6433A8F232F120C00C1FE39 /* hiddenlake.jpg */,
+				B6433A8D232F120C00C1FE39 /* icybay.jpg */,
+				B6433A90232F120C00C1FE39 /* lakemcdonald.jpg */,
+				B6433A95232F120D00C1FE39 /* rainbowlake.jpg */,
+				B6433A92232F120D00C1FE39 /* silversalmoncreek.jpg */,
+				B6433A8B232F120C00C1FE39 /* stmarylake.jpg */,
+				B6433A93232F120D00C1FE39 /* turtlerock.jpg */,
+				B6433A8E232F120C00C1FE39 /* twinlake.jpg */,
+				B6433A91232F120D00C1FE39 /* umbagog.jpg */,
+				B6433A8C232F120C00C1FE39 /* yukon_charleyrivers.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		B68B289C232D918000958B94 = {
 			isa = PBXGroup;
 			children = (
@@ -132,19 +152,7 @@
 		B68B28C3232E84F900958B94 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B6433AA5232FE52400C1FE39 /* charleyrivers.jpg */,
-				B6433A96232F120D00C1FE39 /* chilkoottrail.jpg */,
-				B6433A94232F120D00C1FE39 /* chincoteague.jpg */,
-				B6433A8F232F120C00C1FE39 /* hiddenlake.jpg */,
-				B6433A8D232F120C00C1FE39 /* icybay.jpg */,
-				B6433A90232F120C00C1FE39 /* lakemcdonald.jpg */,
-				B6433A95232F120D00C1FE39 /* rainbowlake.jpg */,
-				B6433A92232F120D00C1FE39 /* silversalmoncreek.jpg */,
-				B6433A8B232F120C00C1FE39 /* stmarylake.jpg */,
-				B6433A93232F120D00C1FE39 /* turtlerock.jpg */,
-				B6433A8E232F120C00C1FE39 /* twinlake.jpg */,
-				B6433A91232F120D00C1FE39 /* umbagog.jpg */,
-				B6433A8C232F120C00C1FE39 /* yukon_charleyrivers.jpg */,
+				B6433AA723301F1E00C1FE39 /* Images */,
 				B68B28C4232E851700958B94 /* landmarkData.json */,
 			);
 			path = Resources;
