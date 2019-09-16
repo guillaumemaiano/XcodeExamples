@@ -28,7 +28,7 @@ struct LandmarkDetail: View {
             VStack(alignment: .leading) {
                 HStack {
                     Text(landmark.name).font(.title)
-                    Button(action:{}) {
+                    Button(action:{self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()}) {
                         if self.userData.landmarks[self.landmarkIndex].isFavorite {
                         Image(systemName: "star.fill")
                             .foregroundColor(.yellow)
