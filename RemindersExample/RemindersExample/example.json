@@ -1,0 +1,13 @@
+{"user": {"name": "john",
+        "surname": "doe"
+    },
+    "partner": {
+        "name": "jake",
+        "surname": "doe"
+    },
+    "dependents":
+        [
+            {"name": "jane", "surname": "doe"},
+            {"name": "jill", "surname": "doe"}
+        ]
+}

@@ -3,14 +3,15 @@
 //  Landmarks
 //
 //  Created by guillaume MAIANO on 18/09/2019.
-//  Copyright © 2019 guillaume MAIANO. All rights reserved.
-//
+// As any other file here, based on Apple tutorial...
+
 
 import SwiftUI
 
 struct ProfileHost: View {
+   // @State var profile = Profile.default
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        Text("")//Profile for: \(profile.username)")
     }
 }
 
